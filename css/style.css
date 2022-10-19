@@ -102,6 +102,10 @@ nav {
   position: fixed;
   top: 0;
   z-index: 11;
+  transition: var(--transition);
+}
+.window__scroll {
+  background: var(--color-bg2);
 }
 
 .nav__container {
@@ -122,20 +126,19 @@ nav button {
   font-size: 0.9rem;
   transition: var(--transition);
 }
-/* FIXME */
+
 .nav__menu a:hover {
-  color: var(--color-bg1);
+  color: var(--color-light);
 }
-/* FIXME */
+
 .nav__menu a::after {
   content: "";
   display: block;
-  background-color: var(--color-bg2);
+  background-color: var(--color-danger);
   width: 0%;
   height: 2px;
   transition: var(--transition);
 }
-/* FIXME */
 .nav__menu a:hover::after {
   width: 100%;
 }
